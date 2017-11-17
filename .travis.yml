@@ -1,0 +1,16 @@
+language: node_js
+node_js: '8'
+cache:
+  yarn: true
+  directories:
+    - node_modules
+notifications:
+  email: false
+before_install: yarn global add greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+script:
+  - yarn test
+  - yarn build:ts
+  - yarn build:next
+after_script: greenkeeper-lockfile-upload
+
