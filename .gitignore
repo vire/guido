@@ -3,8 +3,8 @@ dist
 .next
 
 # generated javascript
-components/**/*.js
-components/**/*.js.map
+src/**/*.js
+src/**/*.js.map
 
 pages/**/*.js
 pages/**/*.js.map
